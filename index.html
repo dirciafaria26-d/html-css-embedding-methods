@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Methods of Embedding CSS</title>
+
+    <!-- Part 3: Linking to External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Part 2: Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f8fafc;
+        }
+
+        .section-box {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Internal Style Classes */
+        .internal-heading {
+            color: #8e44ad; /* Purple color */
+            font-size: 24px;
+        }
+
+        .internal-para {
+            color: #2980b9; /* Blue color */
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PART 1: INLINE STYLE -->
+    <div class="section-box">
+        <h1 style="color: #c0392b; font-size: 24px;">Part 1: Inline Style Heading</h1>
+        <p style="color: #16a085; font-size: 16px; line-height: 1.6;">
+            This paragraph text color is styled directly inside the HTML tag using the <code>style</code> attribute (Inline CSS).
+        </p>
+    </div>
+
+    <!-- PART 2: INTERNAL STYLE -->
+    <div class="section-box">
+        <h1 class="internal-heading">Part 2: Internal Style Heading</h1>
+        <p class="internal-para">
+            This paragraph text color is styled using the <code>&lt;style&gt;</code> block placed inside the <code>&lt;head&gt;</code> tag (Internal CSS).
+        </p>
+    </div>
+
+    <!-- PART 3: EXTERNAL STYLE -->
+    <div class="section-box">
+        <h1 class="external-heading">Part 3: External Style Heading</h1>
+        <p class="external-para">
+            This paragraph text color is styled using rules defined in an external stylesheet file named <code>style.css</code> (External CSS).
+        </p>
+    </div>
+
+</body>
+</html>
