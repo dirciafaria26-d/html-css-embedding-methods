@@ -1,0 +1,11 @@
+/* Part 3: External CSS */
+.external-heading {
+    color: #e67e22; /* Orange color */
+    font-size: 24px;
+}
+
+.external-para {
+    color: #27ae60; /* Green color */
+    font-size: 16px;
+    line-height: 1.6;
+}
